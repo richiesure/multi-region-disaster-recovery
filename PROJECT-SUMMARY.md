@@ -1,7 +1,6 @@
 # PROJECT 8 COMPLETION SUMMARY
 
 **Project**: Multi-Region Disaster Recovery  
-**Date**: November 21, 2025  
 **Duration**: ~15 minutes
 
 ---
@@ -69,20 +68,6 @@
 2. Activate secondary with clean data
 3. **Recovery: < 15 minutes**
 
----
-
-## Interview Talking Points
-
-**Q: How do you handle disaster recovery in AWS?**
-> "I implement multi-region architecture with S3 cross-region replication for data, Route53 health checks for monitoring, and CloudWatch alarms for alerting. This gives us an RTO under 15 minutes and RPO under 1 minute. The setup costs only $2/month but protects against region-wide outages."
-
-**Q: What's the difference between RTO and RPO?**
-> "RTO (Recovery Time Objective) is how long until we're back online - our target is 15 minutes. RPO (Recovery Point Objective) is how much data we can afford to lose - with S3 replication, we lose less than 1 minute of data. These metrics drive our DR architecture decisions."
-
-**Q: How do you test your DR plan?**
-> "I created a dr-failover.sh script that checks health status, verifies replication, and provides failover instructions. We run quarterly DR drills where we actually fail over to the secondary region to ensure the process works and the team knows the procedures."
-
----
 
 ## Skills Demonstrated
 
